@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{{ project }}</h1>
+
+    {% for a in tasks %}
+        <div class="card">
+            <h1>
+                {{ a.tittle }}
+            </h1>
+        </div>
+
+    {% endfor %}
+{% endblock %}
